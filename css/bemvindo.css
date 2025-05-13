@@ -17,6 +17,7 @@ a{
     --cor-secundaria: #00AAAA;
 }
 
+/* ----------- PROGRAMA JA CONFIGURADO PARA CELL (min-width: 600px) ---------- */
 /* ----------- BODY ---------- */
 body {
     display: flex;
@@ -108,4 +109,30 @@ main a {
 }
 main a:active {
     transform: scale(0.9);
+}
+
+/* ----------- RESPONSIVIDADE ---------- */
+
+@media screen and (min-width: 768px) {
+    main {
+        height: 80vh;
+    }
+    .conteudo-bemvindo{
+        width: 90%;
+    }
+    .conteudo-bemvindo figure {
+        width: 400px;
+    }
+    .info-bemvindo h1 {
+        font-size: 2rem;
+    }
+    .info-bemvindo p {
+        max-width: 400px;
+    }
+    .conteudo-bemvindo {
+        flex-direction: row;
+    }
+    main a{
+        width: 80%;
+    }
 }
