@@ -144,3 +144,17 @@ main a:active {
         max-width: 900px;
     }
 }
+@media screen and (min-width: 1300px) {
+    .conteudo-bemvindo {
+        gap: 10rem;
+    }
+    .info-bemvindo h1 {
+        font-size: 3rem;
+    }
+    .info-bemvindo p {
+        max-width: 600px;
+    }
+    main a {
+        max-width: 900px;
+    }
+}
