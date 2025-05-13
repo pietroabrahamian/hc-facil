@@ -47,3 +47,65 @@ header > figure > a{
 header > figure > a > img{
     width: 100%;
 }
+
+/* ----------- MAIN ---------- */
+main {
+    width: 100vw;
+    margin-top: 1rem;
+    gap: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.conteudo-bemvindo {
+    width: 100%;
+    gap: 0.5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.conteudo-bemvindo figure {
+    width: 350px;
+    background: #ffffff;
+     background: linear-gradient(360deg,rgba(255, 255, 255, 1) 2% , rgba(153, 153, 153, 0) 40%);
+}
+.conteudo-bemvindo figure img {
+    width: 100%;
+    z-index: -1;
+    position: relative;
+}
+.info-bemvindo {
+    padding: 0rem 1rem;
+    text-align: center;
+}
+.info-bemvindo h1 {
+    color: var(--cor-principal);
+    font-size: 2rem;
+}
+.info-bemvindo p {
+    max-width: 300px;
+    font-size: 1rem;
+}
+main a {
+    width: 300px;
+    height: 8vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--cor-principal);
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+main a:active {
+    transform: scale(0.9);
+}
