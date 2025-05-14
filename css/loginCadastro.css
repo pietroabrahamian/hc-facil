@@ -1,5 +1,10 @@
 @import url(../reset.css);
 /* ----------- PROGRAMA JA CONFIGURADO PARA CELL (min-width: 600px) ---------- */
+/* ----------- BODY ---------- */
+body {
+    height: 100vh;
+    justify-content: space-between;
+}
 /* ----------- HEADER ---------- */
 header {
     width: 100vw;
@@ -19,4 +24,112 @@ header > figure > a{
 }
 header > figure > a > img{
     width: 100%;
+}
+
+/* ----------- MAIN ---------- */
+main {
+    width: 90vw;
+    height: 80vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+}
+.img-main {
+    display: none;
+}
+.conteudo {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+}
+.text-main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.text-main h1 {
+    font-size: 2.5rem;
+    color: var(--cor-secundaria);
+}
+.text-main p {
+    text-align: center;
+    max-width: 300px;
+    font-size: 0.7rem;
+}
+.font-logo {
+    color: #0E79C1;
+    color: linear-gradient(90deg,rgba(14, 121, 193, 1) 0%, rgba(0, 170, 170, 0) 100%);
+}
+.bold {
+    font-weight: bold;
+}
+.login {
+    /* width: 100%; */
+    min-width: 380px;
+    height:70%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.24) 1px -3px 8px, rgba(0, 0, 0, 0.24) -1px -3px 8px;
+}
+.login input {
+    width: 300px;
+    height: 60px;
+    padding: 0 1rem;
+
+    background-color: #e9e9e9;
+    border-radius: 10px;
+    border: none;
+    outline: var(--cor-principal);
+}
+.login input:hover,
+.login input:focus {
+  border: 2px solid var(--cor-principal);
+  box-shadow: 0px 0px 0px 7px hsl(180, 100%, 33%, 20%);
+  background-color: white;
+}
+#buttonLogin {
+    width: 300px;
+    height: 60px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--cor-principal);
+    color: white;
+    cursor: pointer;
+    font-size: 1.3rem;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+#buttonLogin:hover, #buttonLogin:active {
+    transform: scale(0.9);
+    background-color: white;
+    color: var(--cor-principal);
+    border: 2px solid var(--cor-principal);
+}
+.voltar {
+    width: 60px;
+    height: 60px;
+    border: none;
+    background: url(../assets/img/volta.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.voltar:hover, .voltar:active {
+    transform: scale(0.9);
 }
