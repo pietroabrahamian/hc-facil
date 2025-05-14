@@ -1,14 +1,7 @@
 @import url(../reset.css);
 /* ----------- PROGRAMA JA CONFIGURADO PARA CELL (min-width: 600px) ---------- */
 /* ----------- BODY ---------- */
-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    overflow-x: hidden;
-}
+
 
 /* ----------- HEADER ---------- */
 header {

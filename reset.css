@@ -16,3 +16,13 @@ a{
     --cor-principal: #0E79C1;
     --cor-secundaria: #00AAAA;
 }
+
+/* ----------- BODY ---------- */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    overflow-x: hidden;
+}
