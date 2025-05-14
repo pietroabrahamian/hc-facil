@@ -76,8 +76,9 @@ main {
 }
 .card-login, .card-cadastro {
     min-width: 380px;
-    height:70%;
-
+    height: 80%;
+    padding: 1rem 0rem;
+    
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -144,6 +145,11 @@ main {
     align-items: center;
     gap: 2rem;
 }
+.card-cadastro {
+    padding: 1rem 0rem;
+    height: 80%;
+}
+
 .text-main p {
     font-size: 0.8rem;
 }
