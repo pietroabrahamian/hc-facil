@@ -146,3 +146,42 @@ main {
     width: 400px;
   }
 }
+
+@media screen and (min-width: 992px) {
+    body {
+        justify-content: space-around;
+    }
+    header {
+        height: 10vh;
+    }
+    main {
+        flex-direction: row;
+    }
+    .img-main {
+        width: 60%;
+        display: block;
+    }
+    .img-main figure {
+        width: 100%;
+    }
+    .img-main figure figcaption {
+        width: 100%;
+    }
+    .img-main figure figcaption img {
+        width: 100%;
+    }
+    .conteudo {
+        width: 40%;
+        gap: 0rem;
+    }
+     .text-main p {
+        font-size: 0.8rem;
+    }
+    .login {
+        width: 100%;
+        /* width: 400px; */
+    }
+    .login input{
+        width: 300px;
+      }
+}
