@@ -8,7 +8,7 @@ body {
 /* ----------- HEADER ---------- */
 header {
     width: 100vw;
-    height: 20vh;
+    height: 15vh;
     padding: 0.5rem;
 
     display: flex;
@@ -44,7 +44,7 @@ main {
     width: 100%;
     height: 100%;
 
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
@@ -58,6 +58,7 @@ main {
     align-items: center;
 }
 .text-main h1 {
+    text-align: center;
     font-size: 2.5rem;
     color: var(--cor-secundaria);
 }
@@ -73,8 +74,7 @@ main {
 .bold {
     font-weight: bold;
 }
-.card-login {
-    /* width: 100%; */
+.card-login, .card-cadastro {
     min-width: 380px;
     height:70%;
 
@@ -86,7 +86,7 @@ main {
     border-radius: 30px;
     box-shadow: rgba(0, 0, 0, 0.24) 1px -3px 8px, rgba(0, 0, 0, 0.24) -1px -3px 8px;
 }
-.card-login input {
+.card-login input, .card-cadastro input {
     width: 300px;
     height: 60px;
     padding: 0 1rem;
@@ -97,12 +97,12 @@ main {
     outline: var(--cor-principal);
 }
 .card-login input:hover,
-.card-login input:focus {
+.card-login input:focus, .card-cadastro input:hover, .card-cadastro input:focus {
   border: 2px solid var(--cor-principal);
   box-shadow: 0px 0px 0px 7px hsl(180, 100%, 33%, 20%);
   background-color: white;
 }
-#buttonLogin {
+#buttonLogin, #buttonCadastro {
     width: 300px;
     height: 60px;
     border-radius: 10px;
@@ -114,7 +114,7 @@ main {
     font-weight: bold;
     transition: all 0.3s;
 }
-#buttoncard-login:hover, #buttoncard-login:active {
+#buttoncard-login:hover, #buttoncard-login:active, #buttonCadastro:hover, #buttonCadastro:active {
     transform: scale(0.9);
     background-color: white;
     color: var(--cor-principal);
@@ -134,15 +134,32 @@ main {
     transform: scale(0.9);
 }
 
+.cadastro {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+}
+.text-main p {
+    font-size: 0.8rem;
+}
+.card-cadastro p {
+    font-size: 0.9rem;
+}
+
 @media screen and (min-width: 768px) {
     .text-main p {
         font-size: 0.9rem;
         max-width: 400px;
     }
-    .card-login {
+    .card-login, .card-cadastro {
         width: 500px;
     }
-  .card-login input{
+  .card-login input, .card-cadastro input { 
     width: 400px;
   }
 }
@@ -170,28 +187,34 @@ main {
     .img-main figure figcaption img {
         width: 100%;
     }
-    .login {
+    .login, .cadastro {
         width: 40%;
         gap: 0rem;
     }
      .text-main p {
         font-size: 0.8rem;
     }
-    .card-login {
+    .card-login, .card-cadastro {
         width: 100%;
     }
-    .card-login input{
+    .card-login input, .card-cadastro input {
         width: 300px;
       }
 }
 @media screen and (min-width: 1300px) {
+    .img-main {
+        width: 65%;
+    }
+    .login {
+        width: 35%;
+    }
     .text-main p {
         font-size: 1rem;
     }
-    .card-login input{
+    .card-login input, .card-cadastro input {
         width: 400px;
     }
-    #buttonLogin {
+    #buttonLogin, #buttonCadastro {
         width: 350px;
     }
 
