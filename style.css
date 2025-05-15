@@ -66,6 +66,7 @@ main {
     background-color:  var(--cor-principal);
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.24) -1px 3px 8px, rgba(0, 0, 0, 0.24) 1px 3px 8px;
+    cursor: pointer;
     transition: all 0.3s;
 }
 .card:hover, .card:active {
@@ -163,4 +164,31 @@ main {
     .card-videos h2 {
         width: 90%;
     }
+}
+@media screen and (min-width: 1300px) {
+    header {
+        max-width: 1500px;
+    }
+    main {
+        max-width: 1500px;
+    }
+    .cards {
+        column-gap: 4rem;;
+    }
+    .card {
+        height: 70%;
+    }
+    .card img {
+        width: 150px;
+    }
+    .card h2 {
+        font-size: 1.5rem;
+    }
+    .card-videos h2 {
+          width: 90%;
+    }
+    .card-videos img {
+        width: 180px;
+    }
+      
 }
