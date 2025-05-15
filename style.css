@@ -1,1 +1,32 @@
 @import url(reset.css);
+
+/* ----------- PROGRAMA JA CONFIGURADO PARA CELL (min-width: 600px) ---------- */
+/* ----------- BODY ---------- */
+body {
+    height: 100vh;
+    justify-content: space-between;
+}
+/* ----------- HEADER ---------- */
+header {
+    width: 100vw;
+    height: 15vh;
+    padding: 1rem 1rem 0rem 1rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header figure {
+    width: 120px;
+}
+header figcaption, header figcaption a, header figcaption a img {
+    width: 100%;
+}
+header button {
+    width: 30px;
+    height: 30px;
+    background-image: url(assets/img/menu.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: none;
+}
