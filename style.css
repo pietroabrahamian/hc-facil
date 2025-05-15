@@ -104,3 +104,36 @@ main {
     transform: rotateY(180deg);
     width: 130px;
 }
+
+
+@media screen and (min-width: 768px) {
+    header {
+     max-width: 850px;
+    }
+    main {
+        max-width: 900px;
+    }
+    .cards {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        column-gap: 2rem;;
+        place-items: center
+    }
+    .card {
+        height: 60%;
+    }
+    .card-videos h2 {
+        width: 90%;
+    }
+     .card-videos p {
+        width: 75%;
+    }
+    .card-videos img {
+        right: -30px;
+        
+    }
+    .card img {
+        right: -20px;
+        width: 110px;
+    }
+}
