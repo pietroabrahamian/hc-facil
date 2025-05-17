@@ -18,10 +18,10 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-header figure {
+header a {
     width: 120px;
 }
-header figcaption, header figcaption a, header figcaption a img {
+header img {
     width: 100%;
 }
 header button {
