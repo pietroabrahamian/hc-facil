@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../css/loginCadastro.css">
-       <link rel="shortcut icon" href="assets/img/logoHCFacil.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/img/logoHCFacil.ico" type="image/x-icon">
+    <script src="../../js/loginCadastro.js" defer></script>
     <title>Faça seu Login - HC</title>
 </head>
 <body>
@@ -26,7 +27,7 @@
             </section>
             <section class="card-login">
                 <input type="text" placeholder="CPF">
-                <input type="number" placeholder="TELEFONE">
+                <input type="tel" placeholder="TELEFONE">
                 <button id="buttonLogin">Entrar</button>
                 <p>Primeiro acesso? <span id="irPCadastro" class="font-logo">Faça seu cadastro</span></p>
                 <button class="voltar"></button>
@@ -41,10 +42,11 @@
                 <input type="text" placeholder="NOME" id="nome">
                 <input type="email"  placeholder="EMAIL" id="email">
                 <input type="text" placeholder="CPF">
-                <input type="number" placeholder="TELEFONE">
+                <input type="tel" placeholder="TELEFONE">
                 <button id="buttonCadastro">Vamos Começar</button>
                 <p>Já esteve conosco outra vez? <span id="irPCadastro" class="font-logo">Faça seu login</span></p>
-                <button class="voltar"></button>
+                <button class="voltar" id="voltar"></button>
+                <a href="../bemvindo/bemvindo.html"></a>
             </section>
         </section>
     </main>
