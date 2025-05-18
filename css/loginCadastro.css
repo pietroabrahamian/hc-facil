@@ -134,6 +134,10 @@ main {
 .voltar:hover, .voltar:active {
     transform: scale(0.9);
 }
+#irPLogin, #irPCadastro {
+    color: var(--cor-principal);
+    cursor: pointer;
+}
 
 .cadastro {
     width: 100%;
