@@ -29,17 +29,8 @@ header button {
     border: none;
 }
 
-main {
-    max-width: 600px;
-    width: 100%;
-    padding: 0rem 0rem 3rem 0rem;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-}
+
 
 .menuTelasMaiores {
     display: none;
@@ -117,50 +108,95 @@ nav ul li a, nav ul li a i {
 }
  
 
+
+
+
+/* ----------- MAIN ---------- */
+main {
+    max-width: 600px;
+    width: 100%;
+    padding: 0rem 0rem 3rem 0rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+.img-faq {
+    display: none;
+}
+
+
 @media screen and (min-width: 768px) {
-    main {
-        height: 80vh;
+    header, main {
+        max-width: 800px;
     }
-    .conteudo-bemvindo{
-        width: 90%;
+    .menuTelasMaiores {
+        display: flex;
     }
-    .conteudo-bemvindo figure {
-        width: 400px;
+    #abrirMenuHamburguer {
+     display: none;
     }
-    .info-bemvindo h1 {
-        font-size: 2rem;
+    .cards-grid {
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
     }
-    .info-bemvindo p {
-        max-width: 400px;
-    }
-    .conteudo-bemvindo {
-        flex-direction: row;
-    }
-    main a{
-        width: 80%;
+    .card {
+        height: 100%;
     }
 }
 
 @media screen and (min-width: 992px) {
-    header > figure {
-        width: 200px;
+    header, main {
+        max-width: 1100px;
     }
-    main a {
-        max-width: 900px;
+    main {
+        padding: 0rem 0rem 3rem 0rem;
+        height: 80vh;
+    }
+    .cards-grid {
+        height: 100%;
     }
 }
 
 @media screen and (min-width: 1300px) {
-    .conteudo-bemvindo {
-        gap: 10rem;
+    header, main {
+        max-width: 1250px;
     }
-    .info-bemvindo h1 {
-        font-size: 3rem;
+    main {
+        margin-top: 2rem;
+        height: 70vh;
+        padding: 0rem 0rem 0rem 0rem;
+        justify-content: space-between;
+        flex-direction: row;
+        gap: 0;
     }
-    .info-bemvindo p {
-        max-width: 600px;
+    .faq-conteudo {
+        width: 100%;
     }
-    main a {
-        max-width: 900px;
+    .cards-grid {
+        height: 80%;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .card {
+        height: 100%;
+        backdrop-filter: blur(6px);
+    }
+    .img-faq {
+        width: 100vw;
+        position: absolute;        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: -1000;
+    }
+    .img-faq img {
+        width: 100%;
+        opacity: 0.4;
     }
 }
