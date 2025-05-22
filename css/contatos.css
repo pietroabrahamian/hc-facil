@@ -26,3 +26,22 @@ header button {
     background-repeat: no-repeat;
     border: none;
 }
+.menuTelasMaiores {
+    display: none;
+}
+.menuTelasMaiores {
+    width: 50%;
+    padding: 0rem 1rem 0rem 0rem;
+
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+.menuTelasMaiores > li > a {
+    font-weight: 600;
+    color: black;
+}
+.menuTelasMaiores > li {
+    transition: all 0.3s;
+}
+
