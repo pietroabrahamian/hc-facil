@@ -170,6 +170,29 @@ main {
 }
 
 @media screen and (min-width: 1300px) {
+       header, main {
+        max-width: 1250px;
+    }
+    main {
+        margin-top: 2rem;
+        height: 70vh;
+        padding: 0rem 0rem 0rem 0rem;
+        justify-content: space-between;
+        flex-direction: row;
+        gap: 0;
+    }
+    .faq-conteudo {
+        width: 100%;
+    }
+    .cards-grid {
+        height: 80%;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .card {
+        height: 100%;
+        backdrop-filter: blur(6px);
+    }
     .img-faq {
         width: 100vw;
         position: absolute;        
@@ -217,4 +240,7 @@ main {
         height: 100%;
     }
 }
+
+
+
 
