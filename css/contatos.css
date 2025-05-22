@@ -260,4 +260,18 @@ main {
         font-size: 1rem;
     }
 }
-
+@media screen and (min-width: 1300px) {
+    .img-contatos img {
+        width: 80%;
+        max-width: 500px;
+    }
+    .card {
+        max-width: 450px;
+    }
+    .card img {
+        width: 90px;
+    }
+    .text-card {
+        font-size:1.7rem;
+    }
+}
