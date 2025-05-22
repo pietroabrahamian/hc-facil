@@ -163,3 +163,23 @@ main {
     color: #0E79C1;
     outline: none;
 }
+
+
+.img-faq {
+    display: none;
+}
+
+@media screen and (min-width: 1300px) {
+    .img-faq {
+        width: 100vw;
+        position: absolute;        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: -1000;
+    }
+    .img-faq img {
+        width: 100%;
+        opacity: 0.4;
+    }
+}
