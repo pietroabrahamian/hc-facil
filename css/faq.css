@@ -1,0 +1,71 @@
+@import url(../reset.css);
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+   
+}
+
+header img,
+header > figure > a > img {
+    width: 100%;
+}
+
+
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        height: 80vh;
+    }
+    .conteudo-bemvindo{
+        width: 90%;
+    }
+    .conteudo-bemvindo figure {
+        width: 400px;
+    }
+    .info-bemvindo h1 {
+        font-size: 2rem;
+    }
+    .info-bemvindo p {
+        max-width: 400px;
+    }
+    .conteudo-bemvindo {
+        flex-direction: row;
+    }
+    main a{
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    header > figure {
+        width: 200px;
+    }
+    main a {
+        max-width: 900px;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .conteudo-bemvindo {
+        gap: 10rem;
+    }
+    .info-bemvindo h1 {
+        font-size: 3rem;
+    }
+    .info-bemvindo p {
+        max-width: 600px;
+    }
+    main a {
+        max-width: 900px;
+    }
+}
