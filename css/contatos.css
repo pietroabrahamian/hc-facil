@@ -189,3 +189,26 @@ main {
 .email p{
     font-size: 1rem;
 }
+@media screen and (min-width: 768px) {
+    header {
+        max-width: 530px;
+    }
+    main {
+        max-width: 700px;
+    }
+    .conteudo-contatos {
+        width: 500px;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    .card img {
+        width: 100px;
+    }
+    .text-card {
+        font-size: 2rem;
+    }
+    .email p{
+        font-size: 1.4rem;
+    }
+}
