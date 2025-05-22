@@ -212,3 +212,52 @@ main {
         font-size: 1.4rem;
     }
 }
+@media screen and (min-width: 992px) {
+    header {
+        max-width: 90vw;
+    }
+    .menuTelasMaiores {
+        display: flex;
+    }
+    #abrirMenuHamburguer {
+        display: none;
+    }
+    main {
+        max-width: 90vw;
+        height: 80vh;
+        flex-direction: row;
+    }
+    .conteudo-contatos {
+        width: 50%;
+        height: 100%;
+    }
+    .contatosHC {
+        width: 80%;
+    }
+    .card {
+        width: 100%;
+        height: 100%;
+    }
+    .card img {
+        width: 80px;
+    }
+    .text-card {
+        justify-content: left;
+        font-size: 1.4rem;
+    }
+    .img-contatos {
+        width: 50%;
+        height: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .img-contatos img {
+        width: 80%;
+    }
+    .email p {
+        font-size: 1rem;
+    }
+}
+
