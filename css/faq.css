@@ -151,3 +151,15 @@ main {
     box-shadow: 0 4px 16px rgba(0,0,0,0.08);
     transform: translateY(-4px) scale(1.02);
 }
+
+.card a {
+    color: var(--cor-principal);
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+.card a:hover,
+.card a:focus {
+    color: #0E79C1;
+    outline: none;
+}
