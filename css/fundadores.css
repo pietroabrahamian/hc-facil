@@ -221,3 +221,23 @@ main {
     font-size: 2rem;
     color: white;
 }
+
+@media screen and (min-width: 768px) {
+    .card {
+        width: 280px;
+    }
+    .img-card {
+        width: 140px;
+        height: 140px;
+    }
+    .card-text h3{
+        font-size: 1.4rem;
+    }
+    .card-text h4 {
+        font-size: 1.2rem;
+    }
+    .card ul li a i {
+        font-size: 2.3rem;
+        color: white;
+    }
+}
