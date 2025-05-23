@@ -241,3 +241,45 @@ main {
         color: white;
     }
 }
+
+@media screen and (min-width: 992px) {
+    header {
+       padding: 0;
+       max-width: 86vw;
+    }
+    .menuTelasMaiores {
+        display: flex;
+    }
+    #abrirMenuHamburguer {
+     display: none;
+    }
+    main {
+        margin-top: 4rem;
+        width: 100vw;
+        height: 60vh;
+        justify-content: space-between;
+    }
+    .cards-grid {
+        grid-template-rows: none;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media screen and (min-width: 1300px) {
+    .card {
+        width: 320px;
+    }
+    .img-card {
+        width: 160px;
+        height: 160px;
+    }
+    .card-text h3{
+        font-size: 1.6rem;
+    }
+    .card-text h4 {
+        font-size: 1.4rem;
+    }
+    .card ul li a i {
+        font-size: 2.5rem;
+        color: white;
+    }
+}
