@@ -17,6 +17,8 @@ const buttonLogin = document.getElementById("buttonLogin");
 const buttonCadastro = document.getElementById("buttonCadastro");
 
 buttonCadastro.addEventListener("click", ()=>{
-    console.log("cadastro");
+    window.location.href = "../../Index.html";
+});
+buttonLogin.addEventListener("click", ()=>{
     window.location.href = "../../Index.html";
 });
