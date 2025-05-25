@@ -13,5 +13,5 @@ esqueciSenha.addEventListener("click", ()=>{
     window.location.href = "./assets/home-pages/esqueci-senha/esqueci-senha.html";
 });
 videos.addEventListener("click", ()=>{
-    window.location.href = "";
+    window.location.href = "./assets/home-pages/videos/videos.html";
 });
