@@ -121,6 +121,8 @@ const buttonLogin = document.getElementById("buttonLogin");
 const buttonCadastro = document.getElementById("buttonCadastro");
 // verificando se cada campo está preenchido
 function login(){
+
+
     if(validLoginCPF && validLoginTelefone) {
         window.location.href = "../../Index.html";
         alert("Cadastro realizado com sucesso!")
@@ -129,6 +131,17 @@ function login(){
     }
 }
 function cadastro(){
+    let listaUser = JSON.parse(localStorage.getItem("listaUser") || "[]");
+
+    listaUser.push(
+        {
+            nomeCad: inNome.value,
+            emailCad: inEmail.value,
+            cpfCad: inCadCPF.value,
+            telefoneCad: inCadTelefone.value
+        }
+    )
+    localStorage.setItem("listaUser", JSON.stringify(listaUser));
     if(validNome && validEmail && validCadCPF && validCadTelefone) {
         window.location.href = "../../Index.html";
         alert("Cadastro realizado com sucesso!")
@@ -136,3 +149,4 @@ function cadastro(){
         alert("Preencha todos os campos para seguir!")
     }
 }
+
