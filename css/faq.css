@@ -3,7 +3,9 @@
 
 
 /* ----------- PROGRAMA JA CONFIGURADO PARA CELL (min-width: 600px) ---------- */
-
+body {
+    overflow-x: hidden;
+}
 /* ----------- HEADER ---------- */
 header {
     max-width: 600px;
@@ -176,7 +178,7 @@ main {
         max-width: 1250px;
     }
     main {
-        margin-top: 2rem;
+
         height: 70vh;
         padding: 0rem 0rem 0rem 0rem;
         justify-content: space-between;
@@ -193,7 +195,6 @@ main {
     }
     .card {
         height: 100%;
-        backdrop-filter: blur(6px);
     }
     .img-faq {
         width: 100vw;
@@ -201,6 +202,8 @@ main {
         display: flex;
         align-items: center;
         justify-content: center;
+        left: 0;
+        top: 0;
         z-index: -1000;
     }
     .img-faq img {
