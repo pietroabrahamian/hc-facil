@@ -261,6 +261,12 @@ main {
     }
 }
 @media screen and (min-width: 1300px) {
+    header, main {
+        max-width: 1250px;
+    }
+    .contatosHC {
+        justify-items: left;
+    }
     .img-contatos img {
         width: 80%;
         max-width: 500px;

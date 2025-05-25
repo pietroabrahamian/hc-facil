@@ -1,12 +1,5 @@
-@import url(reset.css);
-
+@import url(../reset.css);
 /* ----------- PROGRAMA JA CONFIGURADO PARA CELL (min-width: 600px) ---------- */
-/* ----------- BODY ---------- */
-body {
-    height: 100vh;
-    align-items: center;
-    justify-content: flex-start;
-}
 /* ----------- HEADER ---------- */
 header {
     max-width: 600px;
@@ -144,9 +137,7 @@ nav ul li a, nav ul li a i {
 
 /* ----------- MAIN ---------- */
 main {
-    width: 100%;
-    max-width: 500px;
-    margin-top: 1rem;
+    width: 400px;
 
     display: flex;
     flex-direction: column;
@@ -154,77 +145,116 @@ main {
     align-items: center;
     gap: 2rem;
 }
-.cards {
-    width: 80%;
-    height: 75vh;
 
+.cards-grid{
+    width: 100%;
 
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    row-gap: 1rem;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    row-gap: 2rem;
 }
-
 .card {
-    width: 100%;
-    height: 75%;
-    padding-left: 1rem;
-    position: relative;
+    width: 250px;
+    /* height: 350px; */
+    padding: 2rem 1rem 2rem 1rem;
+    aspect-ratio: 5 / 7;
 
-    display:flex ;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    background-color:  var(--cor-principal);
+    border: 4px solid var(--cor-secundaria);
     border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.24) -1px 3px 8px, rgba(0, 0, 0, 0.24) 1px 3px 8px;
-    cursor: pointer;
+    text-align: center;
+    background-color: var(--cor-principal);
     transition: all 0.3s;
 }
 .card:hover, .card:active {
-    transform: matrix3d(1.1, 0, 0, 0, 0, 1.1, 0, 0, 0, 0, 1.1, 0, 0, 0, 0, 1);
-    background-color: var(--cor-secundaria);
-    transition: all 0.3s;
+    transform: translateY(-10px);
 }
-.card h2 {
-    color: white;
-    letter-spacing: 1px;
-    font-size: 1rem;
-    width: 75%;
+.pietro {
+    background: url(../assets/img/pietro.jpg);
+    background-position: center;
+}
+.gabriel {
+    background: url(../assets/img/gabriel.jpg);
+    background-position: center;
+}
+.orlando {
+    background: url(../assets/img/orlando.png);
+    background-position: center;
+}	
+.img-card {
+    width: 120px;
+    height: 120px;
 
-}
-.card img {
-    position: absolute;
-    bottom: 0px;
-    right: -10px;
-    width: 100px;
-}
-.card-videos {
-    flex-direction: column;
-    align-items: flex-start;
+    background-size: cover;
+
+    border: 4px solid var(--cor-secundaria);
+    border-radius: 999px;
+    display: flex;
     justify-content: center;
-    transition: all 0.3s;
+    align-items: center;
 }
-.card-videos:hover, .card-videos:active {
-
-    transition: all 0.3s;
-}
-.card-videos h2 {
-    width: 90%;
-}
-.card-videos p {
+.card-text h3{
+    font-size: 1.2rem;
+    font-weight: 600;
     color: white;
-    width: 75%;
-    font-size: 0.8rem;
 }
-.card-videos img {
-    right: -20px;
-    transform: rotateY(180deg);
-    width: 130px;
+.card-text p {
+    color: white;
+    font-weight: 300;
+}	
+.card-text h4 {
+    font-size: 1rem;
+    font-weight: 300;
+    color: white;
 }
+.card ul {
+    width: 80%;
+    padding-top: 2rem;
 
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-top: 3px solid var(--cor-secundaria);
+}
+.card ul li a {
+    width: 100%;
+    height: 100%;
+}
+.card ul li a i {
+    font-size: 2rem;
+    color: white;
+}
 
 @media screen and (min-width: 768px) {
+    .card {
+        width: 280px;
+    }
+    .img-card {
+        width: 140px;
+        height: 140px;
+    }
+    .card-text h3{
+        font-size: 1.4rem;
+    }
+    .card-text h4 {
+        font-size: 1.2rem;
+    }
+    .card ul li a i {
+        font-size: 2.3rem;
+        color: white;
+    }
+}
+
+@media screen and (min-width: 992px) {
     header {
-        max-width: 850px;
+       padding: 0;
+       max-width: 86vw;
     }
     .menuTelasMaiores {
         display: flex;
@@ -233,90 +263,35 @@ main {
      display: none;
     }
     main {
-        max-width: 900px;
+        margin-top: 4rem;
+        width: 100vw;
+        height: 60vh;
+        justify-content: space-between;
     }
-    .cards {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        column-gap: 2rem;;
-        place-items: center
-    }
-    .card {
-        height: 60%;
-    }
-    .card-videos h2 {
-        width: 90%;
-    }
-     .card-videos p {
-        width: 75%;
-    }
-    .card img {
-        right: -20px;
-        width: 110px;
-    }
-    .card-videos img {
-        width: 130px;
-    }
-}
-@media screen and (min-width: 992px) {
-    header {
-        max-width: 1000px;
-    }
-     .menuTelasMaiores {
-        display: flex;
-    }
-    #abrirMenuHamburguer {
-     display: none;
-    }
-    main {
-        max-width: 1200px;
-    }
-    .cards {
-        column-gap: 4rem;;
-    }
-    .card {
-        height: 70%;
-    }
-    .card img {
-        width: 130px;
-    }
-    .card h2 {
-        font-size: 1.3rem;
-    }
-    .card-videos h2 {
-        width: 90%;
+    .cards-grid {
+        grid-template-rows: none;
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 @media screen and (min-width: 1300px) {
-    header {
+    header, main {
         max-width: 1250px;
     }
-     .menuTelasMaiores {
-        display: flex;
-    }
-    #abrirMenuHamburguer {
-     display: none;
-    }
-    main {
-        max-width: 1500px;
-    }
-    .cards {
-        column-gap: 4rem;;
-    }
     .card {
-        height: 70%;
+        width: 320px;
     }
-    .card img {
-        width: 150px;
+    .img-card {
+        width: 160px;
+        height: 160px;
     }
-    .card h2 {
-        font-size: 1.5rem;
+    .card-text h3{
+        font-size: 1.6rem;
     }
-    .card-videos h2 {
-          width: 90%;
+    .card-text h4 {
+        font-size: 1.4rem;
     }
-    .card-videos img {
-        width: 180px;
+    .card ul li a i {
+        font-size: 2.5rem;
+        color: white;
     }
-      
 }

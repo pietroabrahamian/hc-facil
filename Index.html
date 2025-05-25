@@ -3,51 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="assets/img/logoHCFacil.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./assets/img/logoHCFacil.ico" type="image/x-icon">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-     <script src="main.js" defer></script>
+     <script src="./js/index.js" defer></script>
+     <script src="./menu.js" defer></script>
     <title>HC Facil</title>
 </head>
 <body>
-    <header>
-        <a href="Index.html"><img src="assets/img/logoHCFacil.png" alt="Logo HC Fácil"></a>
+     <header>
+        <a href="./Index.html"><img src="./assets/img/logoHCFacil.png" alt="Logo HC Fácil"></a>
         <ul class="menuTelasMaiores">
-            <li><a href="#">Fundadores</a></li>
-            <li><a href="#">Contatos</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="./assets/bemvindo/bemvindo.html">Sair</a></li>
+            <li><a href="./assets/fundadores/fundadores.html" class="botaoui">Fundadores</a></li>
+            |
+            <li><a href="./assets/contatos/contatos.html" class="botaoui">Contatos</a></li>
+            |
+            <li><a href="./assets/faq/faq.html" class="botaoui">FAQ</a></li>
+            |
+            <li><a href="./assets/bem-vindo/bem-vindo.html" class="botaoui">Sair</a></li>
         </ul>
         <button id="abrirMenuHamburguer"></button>
         <nav id="menuHamburguer">
-            <a href="Index.html"><img src="assets/img/logoHCFacilBranco.png" alt="Logo HC Fácil"></a>
+            <a href="./Index.html"><img src="./assets/img/logoHCFacilBranco.png" alt="Logo HC Fácil"></a>
             <ul>
-                <li><a href="#"><i class="fa-solid fa-people-group"></i>Fundadores</a></li>
-                <li><a href="#"><i class="fa-solid fa-phone"></i>Contatos</a></li>
-                <li><a href="#"><i class="fa-solid fa-circle-question"></i>FAQ</a></li>
-                <li><a href="./assets/bemvindo/bemvindo.html"><i class="fa-solid fa-person-walking-dashed-line-arrow-right"></i>Sair</a></li>
+                <li><a href="./assets/fundadores/fundadores.html"><i class="fa-solid fa-people-group"></i>Fundadores</a></li>
+                <li><a href="./assets/contatos/contatos.html"><i class="fa-solid fa-phone"></i>Contatos</a></li>
+                <li><a href="./assets/faq/faq.html"><i class="fa-solid fa-circle-question"></i>FAQ</a></li>
+                <li><a href="./assets/bem-vindo/bem-vindo.html"><i class="fa-solid fa-person-walking-dashed-line-arrow-right"></i>Sair</a></li>
             </ul>
             <i class="fa-solid fa-xmark" id="fecharMenuHamburguer"></i>
         </nav>
     </header>
     <main>
         <section class="cards">
-            <a class="card">
+            <a class="card" id="marqueSuaConsulta">
                 <h2>Marque a sua consulta</h2>
-                <img src="assets/img/consultaAvatar.png" alt="Enfermeira simpática com uma prancheta na mão">
+                <img src="./assets/img/consultaAvatar.png" alt="Enfermeira simpática com uma prancheta na mão">
             </a>
-             <a class="card">
+             <a class="card" id="facaSeuLogin">
                 <h2>Faça seu login</h2>
-               <img src="assets/img/loginAvatar.png" alt="Enfermeira simpática com uma prancheta na mão">
+               <img src="./assets/img/loginAvatar.png" alt="Enfermeira simpática com uma prancheta na mão">
             </a>
-             <a class="card">
+             <a class="card" id="esqueciSenha">
                 <h2>Esqueci a minha senha</h2>
-             <img src="assets/img/esqueciSenhaAvatar.png" alt="Enfermeira simpática com uma prancheta na mão">
+             <img src="./assets/img/esqueciSenhaAvatar.png" alt="Enfermeira simpática com uma prancheta na mão">
             </a>
-            <a class="card card-videos">
+            <a class="card card-videos" id="videos">
                 <h2>Ainda está com dificuldaes?</h2>
                 <p>Acesse os nossos tutoriais em vídeos e tenha tudo visualmente explicado!</p>
-                <img src="assets/img/videosAvatar.png" alt="Senhor de idade rindo para o celular">
+                <img src="./assets/img/videosAvatar.png" alt="Senhor de idade rindo para o celular">
             </a>
         </section>
     </main>

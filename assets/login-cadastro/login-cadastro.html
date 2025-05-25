@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/logoHCFacil.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../css/login-cadastro.css">
+    <link rel="shortcut icon" href="assets/img/logoHCFacil.ico" type="image/x-icon">
+    <script src="../../js/login-cadastro.js" defer></script>
+    <title>Faça seu Login - HC</title>
+</head>
+<body>
+    <header>
+        <figure>
+            <a href="./login-cadastro.html"><img src="../img/logoHCFacil.png" alt="Logo do Hospital das Clínicas"></a>
+        </figure>
+    </header>
+    <main>
+        <section class="img-main">
+            <figure>
+            <figcaption><img src="../img/fotoLogin.png" alt="ilustração de uma consulta"></figcaption>
+            </figure>
+        </section>
+        <form class="login" id="formLogin">
+            <section class="text-main">
+                <h1>FAÇA SEU LOGIN</h1>
+                <p>Falta apenas um passo para a <span class="font-logo bold">HC Fácil</span> possa te ajudar a dominar a plataforma da HC! <span class="bold">Vamos lá?</span></p>
+            </section>
+            <section class="card-login">
+                <figure>
+                    <input type="text" placeholder="CPF: 12345678912" id="inLoginCPF">
+                    <span class="erro" id="erroLoginCPF">O CPF deve ter 11 dígitos.</span>
+                </figure>
+                <figure>
+                    <input type="tel" placeholder="TELEFONE: 11933551628" id="inLoginTelefone">
+                    <span class="erro" id="erroLoginTel">O telefone deve conter o DDD e apenas números.</span>
+                </figure>
+                <button id="buttonLogin" onclick="login()">Entrar</button>
+                <p>Primeiro acesso? <span id="irPCadastro" class="font-logo">Faça seu cadastro</span></p>
+                <a href="../bem-vindo/bem-vindo.html" class="voltar"><img src="../img/volta.png" alt="Voltar"></a>
+            </section>
+        </form>
+        <section class="cadastro" id="formCadastro">
+            <section class="text-main">
+                <h1>FAÇA SEU CADASTRO</h1>
+                <p>Para podermos te ajudar é necessário sabermos de algumas informações suas...</p>
+            </section>
+            <form class="card-cadastro">
+                <figure>
+                    <input type="text" placeholder="NOME" id="inNome">
+                    <span class="erro" id="erroNome">Nome deve conter pelo menos 3 caracteres.</span>
+                </figure>
+                <figure>
+                    <input type="email"  placeholder="EMAIL" id="inEmail">
+                    <span class="erro" id="erroEmail">O email deve conter '@' e '.', sem conter espaço.</span>
+                </figure>
+                <figure>
+                    <input type="text" placeholder="CPF: 12345678912" id="inCadCPF">
+                    <span class="erro" id="erroCadCPF">O CPF deve ter 11 dígitos.</span>
+                </figure>
+                <figure>
+                    <input type="tel" placeholder="TELEFONE: 11933551628" id="inCadTelefone">
+                    <span class="erro" id="erroCadTel">O telefone deve conter o DDD e apenas números.</span>
+                </figure>
+                <button id="buttonCadastro" onclick="cadastro()">Vamos Começar</button>
+                <p>Já esteve conosco outra vez? <span id="irPLogin" class="font-logo">Faça seu login</span></p>
+                <a href="../bem-vindo/bem-vindo.html" class="voltar"><img src="../img/volta.png" alt="Voltar"></a>
+            </form>
+            <a href="../../Index.html"></a>
+        </section>
+    </main>
+</body>
+</html>
