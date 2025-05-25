@@ -175,12 +175,17 @@ main {
     transform: translateY(-10px);
 }
 .pietro {
-    background: url(../assets/img/pietro.png);
-}
-.gabriel {
-    background: url(../assets/img/gabriel.png);
+    background: url(../assets/img/pietro.jpg);
     background-position: center;
 }
+.gabriel {
+    background: url(../assets/img/gabriel.jpg);
+    background-position: center;
+}
+.orlando {
+    background: url(../assets/img/orlando.png);
+    background-position: center;
+}	
 .img-card {
     width: 120px;
     height: 120px;
