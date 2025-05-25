@@ -270,6 +270,9 @@ main {
     }
 }
 @media screen and (min-width: 1300px) {
+    header, main {
+        max-width: 1250px;
+    }
     .card {
         width: 320px;
     }
