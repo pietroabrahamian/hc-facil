@@ -26,9 +26,15 @@
                 <p>Falta apenas um passo para a <span class="font-logo bold">HC Fácil</span> possa te ajudar a dominar a plataforma da HC! <span class="bold">Vamos lá?</span></p>
             </section>
             <section class="card-login">
-                <input type="text" placeholder="CPF">
-                <input type="tel" placeholder="TELEFONE">
-                <button id="buttonLogin">Entrar</button>
+                <figure>
+                    <input type="text" placeholder="CPF: 12345678912" id="inLoginCPF">
+                    <span class="erro" id="erroLoginCPF">O CPF deve ter 11 dígitos.</span>
+                </figure>
+                <figure>
+                    <input type="tel" placeholder="TELEFONE: 11933551628" id="inLoginTelefone">
+                    <span class="erro" id="erroLoginTel">O telefone deve conter o DDD e apenas números.</span>
+                </figure>
+                <button id="buttonLogin" onclick="login()">Entrar</button>
                 <p>Primeiro acesso? <span id="irPCadastro" class="font-logo">Faça seu cadastro</span></p>
                 <a href="../bemvindo/bemvindo.html" class="voltar"><img src="../img/volta.png" alt="Voltar"></a>
             </section>
@@ -39,11 +45,23 @@
                 <p>Para podermos te ajudar é necessário sabermos de algumas informações suas...</p>
             </section>
             <form class="card-cadastro">
-                <input type="text" placeholder="NOME" id="nome">
-                <input type="email"  placeholder="EMAIL" id="email">
-                <input type="text" placeholder="CPF">
-                <input type="tel" placeholder="TELEFONE">
-                <button id="buttonCadastro">Vamos Começar</button>
+                <figure>
+                    <input type="text" placeholder="NOME" id="inNome">
+                    <span class="erro" id="erroNome">Nome deve conter pelo menos 3 caracteres.</span>
+                </figure>
+                <figure>
+                    <input type="email"  placeholder="EMAIL" id="inEmail">
+                    <span class="erro" id="erroEmail">O email deve conter '@' e '.', sem conter espaço.</span>
+                </figure>
+                <figure>
+                    <input type="text" placeholder="CPF: 12345678912" id="inCadCPF">
+                    <span class="erro" id="erroCadCPF">O CPF deve ter 11 dígitos.</span>
+                </figure>
+                <figure>
+                    <input type="tel" placeholder="TELEFONE: 11933551628" id="inCadTelefone">
+                    <span class="erro" id="erroCadTel">O telefone deve conter o DDD e apenas números.</span>
+                </figure>
+                <button id="buttonCadastro" onclick="cadastro()">Vamos Começar</button>
                 <p>Já esteve conosco outra vez? <span id="irPLogin" class="font-logo">Faça seu login</span></p>
                 <a href="../bemvindo/bemvindo.html" class="voltar"><img src="../img/volta.png" alt="Voltar"></a>
             </form>

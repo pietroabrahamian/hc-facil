@@ -97,6 +97,14 @@ main {
     border: none;
     outline: var(--cor-principal);
 }
+.card-login figure, .card-cadastro figure {
+    display: flex;
+    flex-direction: column;
+}
+.erro {
+    display: none;
+    color: red;
+}	
 .card-login input:hover,
 .card-login input:focus, .card-cadastro input:hover, .card-cadastro input:focus {
   border: 2px solid var(--cor-principal);
