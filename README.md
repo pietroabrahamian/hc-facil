@@ -111,7 +111,7 @@ cd hc-facil
 
 3. Abra o arquivo assets/bem-vindo/bem-vindo.html com um navegador de sua escolha.
 
-Pode clicar duas vezes no arquivo ou usar uma extensão como "Live Server" no VS Code para facilitar.
+Usar uma extensão como "Live Server" no VS Code para facilitar.
 
 🛠️ Tecnologias Utilizadas
 - HTML5
