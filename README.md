@@ -23,7 +23,7 @@ https://github.com/hc-challenge/hc-facil
 
 ## 🗂 Estrutura de Pastas
 
-HC-FACIL/
+```HC-FACIL/
 ├── assets/
 │ ├── bem-vindo/
 │ │ └── bem-vindo.html
@@ -60,7 +60,7 @@ HC-FACIL/
 ├── index.html
 ├── reset.css
 └── style.css
-
+```
 ---
 
 ## 🖥 Páginas
