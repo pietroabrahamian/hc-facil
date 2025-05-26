@@ -109,7 +109,7 @@ git clone https://github.com/hc-challenge/hc-facil.git
 2. Acesse a pasta do projeto:
 cd hc-facil
 
-3. Abra o arquivo index.html com um navegador de sua escolha.
+3. Abra o arquivo assets/bem-vindo/bem-vindo.html com um navegador de sua escolha.
 
 Pode clicar duas vezes no arquivo ou usar uma extensão como "Live Server" no VS Code para facilitar.
 
