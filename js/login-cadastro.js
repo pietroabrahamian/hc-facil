@@ -124,7 +124,7 @@ function login(){
 
 
     if(validLoginCPF && validLoginTelefone) {
-        window.location.href = "../../Index.html";
+        window.location.href = "../../index.html";
         alert("Cadastro realizado com sucesso!")
     } else {
         alert("Preencha todos os campos para seguir!")
@@ -143,7 +143,7 @@ function cadastro(){
     )
     localStorage.setItem("listaUser", JSON.stringify(listaUser));
     if(validNome && validEmail && validCadCPF && validCadTelefone) {
-        window.location.href = "../../Index.html";
+        window.location.href = "../../index.html";
         alert("Cadastro realizado com sucesso!")
     } else {
         alert("Preencha todos os campos para seguir!")
