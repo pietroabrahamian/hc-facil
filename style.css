@@ -226,9 +226,6 @@ main {
     header {
         max-width: 850px;
     }
-    .menuTelasMaiores {
-        display: flex;
-    }
     main {
         max-width: 900px;
     }
