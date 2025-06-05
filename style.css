@@ -229,9 +229,6 @@ main {
     .menuTelasMaiores {
         display: flex;
     }
-    #abrirMenuHamburguer {
-     display: none;
-    }
     main {
         max-width: 900px;
     }
